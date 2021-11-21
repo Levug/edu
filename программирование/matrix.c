@@ -3,6 +3,7 @@
 #include <conio.h>
 int main()
 {
+    printf("\n");
     int R[3][3], B[3], i, j, min=666, diap=187;
     for (i=0; i<3; i++) // задаю матрицу  R
     {
@@ -11,6 +12,7 @@ int main()
             R[i][j]=rand()%diap;
         }
     }
+printf("Matrix R:\n");
 for (i=0; i<3; i++)
 {
     for(j=0; j<3; j++)
@@ -33,9 +35,12 @@ for (i=0; i<3; i++)
             min=666;
         }     
     }
+    printf("\n");
+    printf(" Array B:\n");
     for (i=0; i<3; i++)//вывожу массив В
     {
-        printf(" B=%i", B[i]);
+        printf(" %i", B[i]);
     }
+    printf("\n");
     return 0;
 }
