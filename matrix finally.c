@@ -6,17 +6,17 @@
 
 int main()
 {
-    int R[N][M], B[N], i, j, diap=9, min;
+    int R[N][M], B[N], i, j, diap=9;
     for ( i =0 ; i < 3; i++) // задаю матрицу  R
     {
         for ( j = 0; j < 3; j++)
         {
+           /*
             printf("vvedite ellement matrici[%d][%d]", i, j);         
-
             scanf("%d", &R[i][j]); 
-
-             printf("\n");
-            //R[i][j]=rand()%diap;
+            printf("\n");
+            */
+            R[i][j]=rand()%diap;
         }
     }
     printf(6);
