@@ -20,6 +20,7 @@ int main(void) {
     {
         xn2=pow(-1,n2)*pow(0.999,n2);//(2*n2)/(pow(n2,3)+1);
         n2=n2+1;
+        printf("%1f\n", n2);
     }
     printf("%1f\n", n2);
     

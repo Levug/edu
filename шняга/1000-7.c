@@ -10,5 +10,4 @@ int main()
         printf("%i\n", i);
         Sleep(100);
     }
-    return 0;
 }
