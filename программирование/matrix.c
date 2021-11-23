@@ -41,6 +41,5 @@ for (i=0; i<3; i++)
     {
         printf(" %i", B[i]);
     }
-    printf("\n");
     return 0;
 }
