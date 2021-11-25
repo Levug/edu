@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 int main()
 {   
     float  e=6, PiN=1, Pi=3, n, i=2;
