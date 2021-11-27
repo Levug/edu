@@ -16,15 +16,15 @@ int main()
             R[i][j]=rand()%diap;
         }
     }
-printf("Matrix R:\n");
-for (i=0; i<3; i++)
-{
-    for(j=0; j<3; j++)
+    printf("Matrix R:\n");
+    for (i=0; i<3; i++)
     {
-      printf("%d ", R[i][j]);
-    }
-    printf("\n");
-}   
+        for(j=0; j<3; j++)
+        {
+            printf("%d ", R[i][j]);
+        }
+        printf("\n");
+    }   
     for (j=0, i=0; i<3; j++)// задаю массив B крайне извращенным методом
     {
         if (R[i][j]<min)
