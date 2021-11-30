@@ -1,3 +1,5 @@
+/*Решение уравнения методом хорд*/
+
 #include<stdio.h>
 #include<math.h>
 #include<locale.h>
