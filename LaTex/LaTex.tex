@@ -1,0 +1,70 @@
+\documentclass{article}
+
+\usepackage{empheq}
+\usepackage[a4paper, left=20mm, right=20mm, top=20mm, bottom=30mm]{geometry}
+
+\begin{document}
+
+\textit{\textbf{Atomic Optical Susceptibility.}}//
+The stationary Schrödinger equation of a single electron in an atom is
+\begin{empheq}{equation}\label{ex1}
+  \mathcal{H}_0\psi_n(\textbf{r})=\hbar\epsilon_n\psi_n(\textbf{r}).
+\end{empheq}
+where $\hbar\epsilon_n$ and $\psi_n$ are the energy eigenvalues and the corresponding eigenfunctions,
+respectively. For simplicity, we discuss the example of the hydrogen
+atom which has only a single electron. The Hamiltonian $\mathcal{H}_0$ is then
+given by the sum of the kinetic energy operator and the Coulomb potential
+in the form
+\begin{empheq}{equation}\label{ex2}
+  \mathcal{H}_0 = -\frac{\hbar^2 \nabla^2}{2m_0}-\frac{e^2}{\textbf{r}}.
+\end{empheq}
+An optical field couples to the dipole moment of the atom and introduces
+time-dependent changes of the wave function
+\begin{empheq}{equation}\label{ex3}
+ i\hbar \frac{\partial \psi (\textbf{r},t)}{\partial t} =\left[\mathcal{H}_0 +\mathcal{H}_1(t)\right]\psi(\textbf{r},t) 
+\end{empheq}
+with
+\begin{empheq}{equation}\label{ex4}
+ \mathcal{H}_1(t)=-e x\mathcal{E} n (t) = -d\mathcal{E} (t)
+\end{empheq}
+Here, $d$ is the operator for the electric dipole moment and we assumed that
+the homogeneous electromagnetic field is polarized in $x$-direction. Expand-
+ing the time-dependent wave functions into the stationary eigenfunctions
+of Eq. (\ref{ex1})
+\begin{empheq}{equation}\label{ex5}
+ \psi(\textbf{r},t)=\sum_{m}^{}  a_m (t)e^{-i\epsilon_m t} \psi m (\textbf{r})
+\end{empheq}
+inserting into Eq. (\ref{ex3}), multiplying from the left by $\psi_m ^*$
+$n(\textbf{r})$ and integrating
+over space, we find for the coefficients an the equation
+\begin{empheq}{equation}\label{ex6}
+ i\hbar \frac{da_n}{dt}= - \mathcal{E} (t) \sum_{m}^{}  e^{-i\epsilon_mn t} \left\langle n \left\lvert d\right\rvert m\right\rangle a_m ,
+\end{empheq}
+where
+\begin{empheq}{equation}\label{ex7}
+ \epsilon_mn = \epsilon_m - \epsilon_n
+\end{empheq}
+is the frequency difference and
+\begin{empheq}{equation}\label{ex8}
+ \left\langle n \left\lvert d\right\rvert  m\right\rangle = \int_{}^{} d^3 r\psi_n ^* (\textbf{r})d\psi_m (\textbf{r}) \,dx \equiv d_nm
+\end{empheq}
+is the electric dipole matrix element. We assume that the electron was
+initially at  $t\rightarrow - \infty $  in the state $ \left\lvert l\right\rangle $, i.e.,
+\begin{empheq}{equation}\label{ex9}
+ a_n (t \rightarrow - \infty) + \delta_n,l .
+\end{empheq}
+Now we solve Eq. (\ref{ex6}) iteratively taking the field as perturbation. For this
+purpose, we introduce the smallness parameter $\Delta$ and expand
+\begin{empheq}{equation}\label{ex10}
+ a_n = a_n ^{(0)} + \Delta a_n ^{(1)} + \ldots 
+\end{empheq}
+and
+\begin{empheq}{equation}\label{ex11}
+ \mathcal{E} (t) \rightarrow \Delta \mathcal{E} (t).
+\end{empheq}
+\newpage
+\section*{REFERENCES}
+A.R. Edmonds \textit{Angular Momentum in Quantum Mechanicss}, Princeton, Princeton University Press Publ., 1957. 149 p.\\
+H. Haug and S.W. Koch \textit{Quantum theory of the optical and electronic properties of semiconductors}, Danvers, World Scientific Publ., 2004. 465 p.\\
+F.N. Tomilin, P.V. Avramov, S.A. Varganov, A.A. Kuzubov, S.G. Ovchinnikov \textit{Vozmozhnaya skhema sinteza-sborki fullerenov}, Fizyka tverdogo tela, 2001, vol 43, no. 2.
+\end{document}
