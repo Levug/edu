@@ -1,4 +1,4 @@
-2.
+//2.
 #include <stdio.h>
 #include <math.h>
 #define e 2.7
@@ -22,7 +22,8 @@ if (-20 < x, x <= -7){
       printf("% f", y);
  }
 }
-3.#include <stdio.h>
+//3.
+#include <stdio.h>
 #define N 4
 #define M 5
 int main(){
@@ -61,7 +62,8 @@ for (i=0; i<N; i++)
 y=y/M;
 printf("\n %f",y);
 }
-1.#include <stdio.h>
+//1.
+#include <stdio.h>
 #include <math.h>
 
 int factorial (int num)
