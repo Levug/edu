@@ -14,12 +14,12 @@ __int64 fac(int num)
 }
 int main()
 {
-    int n = 1, S1;
-    float x = 1, y1,c = 1, e = pow(10, -4);
+    int n = 1;
+    float x = 1, e = pow(10, -5);
     double y = 0.5, S = 0;
     while (fabs(y) > e)
     {
-        y = pow(-1, (n+1))*pow(5+0.2*x, 2*(n-1))/(fac(2*n));
+        y = pow(-1, (2*n+1))*((sin(2*n*x)+2*n)/fac(n+3));
         S = S + y;
         printf("%i) y = %f\n", n, y);
         n++;
